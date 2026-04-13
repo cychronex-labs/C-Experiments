@@ -1,1 +1,1 @@
-gcc main.c queue.c -o ThreadSafeQueue -lpthread && ./ThreadSafeQueue
+gcc main.c queue.c -o ThreadBlockingQueue -lpthread && ./ThreadBlockingQueue

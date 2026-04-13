@@ -1,6 +1,5 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-#include <bits/pthreadtypes.h>
 #include <pthread.h>
 
 typedef struct Node {
@@ -12,6 +11,7 @@ typedef struct Queue {
     Node * head;
     Node * tail;
     pthread_mutex_t mutex;
+    pthread_cond_t cond;
 } Queue;
 
 void init_queue(Queue* q);
